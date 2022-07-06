@@ -92,8 +92,8 @@ DATABASES = {
         'NAME': 'safe',  # 数据库名称
         'USER': 'root',  # 用户名
         'PASSWORD': 'root',  # 密码
-        'HOST': '10.31.101.2',  # ip地址
-        'PORT': '13306',  # 端口号
+        'HOST': '172.17.0.4',  # ip地址
+        'PORT': '3306',  # 端口号
     },
 }
 
