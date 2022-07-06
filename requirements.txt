@@ -1,5 +1,5 @@
 Django==3.1.14
-matplotlib==3.5.2
-numpy==1.22.0
+matplotlib
+numpy
 PyMySQL==1.0.2
 interval~=1.0.0
