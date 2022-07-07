@@ -7,5 +7,5 @@
 
 # docker部署
 
-1. 构建docker容器  `docker build -t .`
-2. 运行  `docker run -d -p 8080:8080 --name safe --restart always `
+1. 构建docker容器  `docker build -t {image_name:image_tag} .`
+2. 运行  `docker run -itd -p 8080:8080 --name safe {image_name:image_tag}`
