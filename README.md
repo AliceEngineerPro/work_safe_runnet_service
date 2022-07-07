@@ -1,11 +1,18 @@
-# 本地部署
+# 项目部署
 
-1. 安装python环境  [下载地址](https://www.python.org/downloads/release/python-378/)
-2. 安装依赖模块  `pip install -r requirements.txt`
-3. 修改数据库配置
-4. 启动程序  `python manage.py runserver`
+## docker部署
 
-# docker部署
+```bash
+git clone https://github.com/AliceEngineerPro/workspace_safe.git
+cd workspace_safe
+# 修改数据信息
+sed -i "s/'HOST': '127.0.0.1'/'HOST': '{MySQLHost}'/g;s/'PORT': '3306'/'PORT': '{MySQLPort}'/g;s/'USER': 'root'/'USER': '{MySQLUser}'/g;s/'PASSWORD': 'root'/'PASSWORD': '{MySQLPassword}'/g;s/'NAME': 'safe'/'NAME': 'MySQLDatabaseName'/g" ./safe/settings.py
+```
 
 1. 构建docker容器  `docker build -t {image_name:image_tag} .`
 2. 运行  `docker run -itd -p 8080:8080 --name safe {image_name:image_tag}`
+
+```bash
+# 查看日志
+docker logs -f safe
+```

@@ -78,24 +78,13 @@ WSGI_APPLICATION = 'safe.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    # 默认数据,保存数据文件
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
-    #     'NAME': 'safe',  # 数据库名称
-    #     'USER': 'root',  # 用户名
-    #     'PASSWORD': 'mysql',  # 密码
-    #     'HOST': '47.96.185.215',  # ip地址
-    #     'PORT': '3306',  # 端口号
-    # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
         'NAME': 'safe',  # 数据库名称
         'USER': 'root',  # 用户名
         'PASSWORD': 'root',  # 密码
-        'HOST': '172.17.0.4',  # ip地址
-        # 'HOST': '10.31.101.2',  # ip地址
+        'HOST': '127.0.0.1',  # ip地址
         'PORT': '3306',  # 端口号
-        # 'PORT': '13306',  # 端口号
     },
 }
 
