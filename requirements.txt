@@ -6,7 +6,7 @@ fonttools==4.34.2
 interval==1.0.0
 kiwisolver==1.4.3
 matplotlib==3.5.2
-numpy==1.21.6
+numpy==1.22.0
 packaging==21.3
 Pillow==9.2.0
 pip-review==1.1.1
