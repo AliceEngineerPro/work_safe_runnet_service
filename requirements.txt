@@ -1,7 +1,7 @@
 asgiref==3.5.2
 cycler==0.11.0
 django-cors-headers==3.13.0
-Django==3.2.14
+Django==3.2.18
 fonttools==4.34.2
 interval==1.0.0
 kiwisolver==1.4.3
